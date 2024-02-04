@@ -29,4 +29,6 @@ Make sure npm is installed on your device and the following ports are accessible
 
 ### Using Docker
 
-\# TODO
+1. Get in repository directory
+2. Run ```docker-compose up --build```
+3. Open your browser on following address : [Quote generator](http://localhost:8000)
