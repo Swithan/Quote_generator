@@ -27,7 +27,7 @@ app.get('/quote', (req, res) => {
             try {
                 const jsonData = JSON.parse(data)[0];
                 let author = jsonData.author;
-                let content = jsonData.contenat;
+                let content = jsonData.content;
                 if (author && content) {
                     res.status(200).json({ author, content });
                 } else {
