@@ -1,5 +1,7 @@
 # Quote_generator
 
+## General informations
+
 This app uses [quotable api](https://api.quotable.io/quotes/random) to display random quotes.
 
 Built using Node.JS and React.
@@ -24,3 +26,7 @@ Make sure npm is installed on your device and the following ports are accessible
         2. run ```npm install```
         3. Run ```npm start```
         4. Open your browser on following address : [Quote generator](http://localhost:3000)
+
+### Using Docker
+
+\# TODO
