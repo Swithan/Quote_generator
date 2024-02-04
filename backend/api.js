@@ -24,14 +24,22 @@ app.get('/quote', (req, res) => {
         });
 
         response.on('end', () => {
-            const jsonData = JSON.parse(data)[0];
-            let author = jsonData["author"];
-            let content = jsonData["content"];
-
-            res.json({ "author": author, "content": content })
+            try {
+                const jsonData = JSON.parse(data)[0];
+                let author = jsonData.author;
+                let content = jsonData.contenat;
+                if (author && content) {
+                    res.status(200).json({ author, content });
+                } else {
+                    console.error('Missing author or content fields in API response.');
+                    res.status(500).json({ error: 'Invalid Data from API' });
+                }
+            } catch {
+                res.status(500).json({ error: 'Internal Server Error' });
+            }
         });
     }).on('error', (e) => {
-        console.error(e);
+        res.status(500).json({ error: 'Internal Server Error' });
     });
 })
 
