@@ -5,7 +5,7 @@ interface FooterComponentProps {}
 
 const FooterComponent: FC<FooterComponentProps> = () => (
   <div className={styles.FooterComponent} data-testid="FooterComponent">
-    FooterComponent Component
+    <a href='https://linktr.ee/swithan' target='_blank' rel="noreferrer noopener">Debongnie Nathan</a>
   </div>
 );
 

@@ -1,1 +1,11 @@
-.FooterComponent {}
+.FooterComponent {
+    width: 70vw;
+    margin-bottom: 2vw;
+}
+
+a {
+    text-decoration: none;
+    color: #2a3158;
+    margin: 2%;
+    width: 50vw;
+}

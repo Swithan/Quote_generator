@@ -13,7 +13,7 @@ function BodyComponent ()  {
             setLastQuotes(lastQuotes => [...lastQuotes, quote])
             if (lastQuotes.length > 100) {
               let [, ...all] = lastQuotes;
-              setLastQuotes(lastQuotes => all)
+              setLastQuotes(all)
             }
             if (quote in lastQuotes) {
               getQuote();
