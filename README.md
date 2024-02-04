@@ -4,7 +4,28 @@
 
 This app uses [quotable api](https://api.quotable.io/quotes/random) to display random quotes.
 
+## Technologies
+
 Built using Node.JS and React.
+
+### Node.JS
+
+The backend files are inside the ```/backend``` directory.
+1. ```api.js``` : File for route and server details definition
+2. ```Dockerfile``` : File for Node.JS Docker setup (used later in docker-compose)
+3. ```package.json``` : File containing the different dependencies needed
+
+The frontend files are inside the ```/frontend``` directory.
+1. ```/src``` : containing all code files structuring the React app
+    * The different components are all separated in the ```/component``` directory.
+    * ```index.js & index.css``` are the base files, importing the different components used and defining the default style rules
+2. ```Dockerfile``` : File for React Docker setup (used later in docker-compose)
+3. ```package.json``` : File containing the different dependencies needed
+
+The files in the default directory are for the nginx setup and the docker compose code :
+1. ```default.conf``` : File defining the nginx rules
+2. ```Dockerfile``` : File for nginx Docker setup (used later in docker-compose)
+3. ```docker-compose.yaml``` : File for docker compose (builds all containers and connects them with each other)
 
 ## Install and Run project
 
