@@ -4,7 +4,7 @@ const app = express();
 const https = require('https');
 
 // Global setup
-const port = 3000
+const port = 4200
 app.use(cors())
 
 // Routing
