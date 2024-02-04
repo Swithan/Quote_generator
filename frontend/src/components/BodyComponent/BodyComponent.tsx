@@ -22,12 +22,14 @@ function BodyComponent ()  {
             }
           });
   };
-
+  const getNewQuote = () => {
+    return getQuote();
+  };
 
   return (<div className={styles.BodyComponent} data-testid="BodyComponent">
-    <p>"{quote.content}"</p>
-    <p>~ {quote.author} ~</p>
-    <button onClick={getQuote}>Next quote</button>
+    <p className={styles.quote}>"{quote.content}"</p>
+    <p className={styles.author}>~ {quote.author} ~</p>
+    <button onClick={getNewQuote}>Next quote</button>
   </div>);
 };
 

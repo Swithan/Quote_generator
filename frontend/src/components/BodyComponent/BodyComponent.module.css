@@ -1,1 +1,33 @@
-.BodyComponent {}
+.BodyComponent {
+    width: 70vw;
+}
+
+.quote {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+.author {
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+button {
+    padding: 5%;
+    border: none;
+    background-color: #2a3158;
+    color: #ccd0cf;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #171b35;
+    transition: all 1s;
+}
+
+button:not(:hover) {
+    transition: all 1s;
+}
